@@ -3,7 +3,9 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 //custom components
 import Header from './components/Header';
 import Footer from './components/Footer';
-import About from './components/About';
+import Navigation from './components/Navigation';
+import Home from './components/Home';
+import Blogs from './components/Blogs';
 
 function App() {
 // defined variables
@@ -13,8 +15,12 @@ function App() {
     <Router>
     <div className="container-xl">
       <Header/>
-      
-      <Route path='/about' component={About} />
+      <Navigation/>
+
+      {/* routing begins here */}
+      <Route exact path='/' render={Home} />
+      <Route path='/blogs' component={Blogs} />
+      {/* routing ends here */}
       
       <Footer/>
     </div>

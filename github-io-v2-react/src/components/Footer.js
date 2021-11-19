@@ -1,8 +1,7 @@
 const Footer = () => {
     return (
-        <div className="text-end">
-        <p className='lead'>Copyright &copy; 2021</p>
-        <a href="/about">About</a>
+        <div className="text-center">
+        <p style={{fontSize:12}} className='lead'>Copyright &copy; 2021</p>
         </div>
     )
 }
