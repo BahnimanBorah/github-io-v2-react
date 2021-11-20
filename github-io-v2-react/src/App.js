@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
 import Blogs from './components/Blogs';
+import Projects from './components/Projects';
 
 function App() {
 // defined variables
@@ -13,13 +14,14 @@ function App() {
 
   return (
     <Router>
-    <div className="container-xl">
+    <div className="container">
       <Header/>
       <Navigation/>
 
       {/* routing begins here */}
       <Route exact path='/' render={Home} />
       <Route path='/blogs' component={Blogs} />
+      <Route path='/projects' component={Projects} />
       {/* routing ends here */}
       
       <Footer/>

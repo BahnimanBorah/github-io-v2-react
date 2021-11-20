@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
-        <div className="text-center">
-        <p style={{fontSize:12}} className='lead'>Copyright &copy; 2021</p>
+        <div className="position-relative pt-5">
+            <p style={{fontSize:12}} className='lead position-absolute top-100 start-50 translate-middle'>Copyright &copy; 2021</p>
         </div>
     )
 }
